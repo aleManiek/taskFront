@@ -10,7 +10,9 @@ export default function(props) {
     <div className="client">
       <img src={avatar} alt="avatar"></img>
       <div>
-        <span>{name}</span>
+        <span>
+          <strong>{name}</strong>
+        </span>
         <span>{age} lat</span>
         <span>
           <img className="gender" src={sex ? venus : mars} alt={sex ? "female" : "male"}></img>
