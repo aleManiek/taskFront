@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Client from "./Client";
 import "./ClientsList.css";
-import data from "../TaskFrontend/clients.json";
+import data from "../data/clients.json";
 
 export default function ClientList() {
   const [clients, updateClients] = useState([]);
