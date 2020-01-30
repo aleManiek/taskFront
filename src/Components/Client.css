@@ -3,7 +3,7 @@
 }
 .client {
   background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background: radial-gradient(circle, rgb(194, 201, 209) 0%, rgb(238, 174, 202) 100%);
   position: relative;
   display: flex;
   margin: 10px 0;

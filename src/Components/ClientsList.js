@@ -11,9 +11,10 @@ export default function ClientList() {
   }, []);
 
   const filterList = e => {
-    const currentClients = [...data.data];
+    const currentClients = data.data;
     const updatedClients = currentClients.filter(client => {
-      return client.name.toLowerCase().search(e.target.value.toLowerCase()) !== -1;
+      const nameToSearch = e.target.value.replace(/[^\w\s]/gi, "").toLowerCase();
+      return client.name.toLowerCase().search(nameToSearch) !== -1;
     });
 
     updateClients(updatedClients);
