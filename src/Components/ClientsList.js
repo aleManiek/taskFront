@@ -4,11 +4,7 @@ import "./ClientsList.css";
 import data from "../data/clients.json";
 
 export default function ClientList() {
-  const [clients, updateClients] = useState([]);
-
-  useEffect(() => {
-    updateClients(data.data);
-  }, []);
+  const [clients, updateClients] = useState(data.data);
 
   const filterList = e => {
     const currentClients = data.data;
